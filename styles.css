@@ -17,7 +17,7 @@ body {
 
 header {
   display: flex;
-  margin: 60px;
+  margin: 20px 60px;
   justify-content: space-between;
   align-items: center;
   background-color: #000000;
@@ -95,6 +95,34 @@ section {
   object-fit: cover;
   border-radius: 8px;
 }
+
+
+/* Iconos */
+.iconos {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  padding: 20px;
+  background-color: #000000;
+}
+
+.icon {
+  font-size: 2rem;
+  transition: transform 0.3s ease;
+}
+
+.icon img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.icon:hover {
+  transform: scale(1.2);
+}
+
 
 
 /* Jenny y Lucero */
