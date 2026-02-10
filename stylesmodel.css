@@ -1,0 +1,105 @@
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+  background-color: #000000;
+  color: #f2f2f2;
+}
+
+/* Banner */
+.banner {
+  display: flex;
+  flex-wrap: wrap;          /* permite que se apilen en móviles */
+  min-height: 60vh;
+  gap: 20px;
+}
+
+.banner-left,
+.banner-right {
+  flex: 1 1 50%;            /* cada lado ocupa la mitad */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.banner-left img {
+  width: 100%;
+  max-width: 300px;         /* tamaño moderado */
+  height: auto;
+  border-radius: 8px;
+}
+
+.banner-right ul {
+  list-style: none;
+  font-size: 1.2rem;
+  line-height: 2;
+  text-align: left;         /* texto alineado a la izquierda */
+}
+
+/* Párrafo */
+.parraf {
+  padding: 40px 20px;
+  text-align: center;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+/* Iconos */
+.iconos {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  padding: 20px;
+  background-color: #1a1a1a;
+}
+
+.icon {
+  font-size: 2rem;
+  transition: transform 0.3s ease;
+}
+
+.icon:hover {
+  transform: scale(1.2);
+}
+
+/* Galería */
+.galeria {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  padding: 40px 20px;
+}
+
+.galeria img {
+  width: 100%;
+  max-width: 200px;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+  object-fit: cover;
+}
+
+.galeria img:hover {
+  transform: scale(1.05);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .banner-left,
+  .banner-right {
+    flex: 1 1 100%;         /* en móviles se apilan */
+  }
+
+  .banner-right ul {
+    text-align: center;     /* en móviles centramos el texto */
+  }
+}
